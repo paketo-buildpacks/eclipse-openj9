@@ -67,7 +67,7 @@ id      = "jdk"
 name    = "OpenJ9 JDK"
 version = "8.0.242"
 uri     = "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u242-b08_openj9-0.18.1/OpenJDK8U-jdk_x64_linux_openj9_8u242b08_openj9-0.18.1.tar.gz"
-sha256  = "placeholder"
+sha256  = "ca785af638b24f9d4df896f5a9f557cc9f1e5fa5e2b1174d6b906e3fd5474c2e"
 stacks  = [ "io.buildpacks.stacks.bionic" ]
 
   [[metadata.dependencies.licenses]]
