@@ -1,4 +1,4 @@
-# `eclipse-openj9`
+# `paketo-buildpacks/eclipse-openj9`
 The Paketo Eclipse OpenJ9 Buildpack is a Cloud Native Buildpack that provides the Eclipse OpenJ9 implementations of JREs and JDKs.
 
 This buildpack is designed to work in collaboration with other buildpacks which request contributions of JREs and JDKs.
