@@ -53,9 +53,9 @@ stacks  = [ "io.buildpacks.stacks.bionic" ]
 [[metadata.dependencies]]
 id      = "jre"
 name    = "OpenJ9 JRE"
-version = "14"
-uri     = "placeholder"
-sha256  = "placeholder"
+version = "14.0.0"
+uri     = "https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14%2B36_openj9-0.19.0/OpenJDK14-jre_x64_linux_openj9_14_36_openj9-0.19.0.tar.gz"
+sha256  = "e8c35126d85fed688163ed1ee58fb81b0aed7dd9a3aee262edaf5b82c974abd4"
 stacks  = [ "io.buildpacks.stacks.bionic" ]
 
   [[metadata.dependencies.licenses]]
