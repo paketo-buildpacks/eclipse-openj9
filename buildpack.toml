@@ -81,7 +81,7 @@ id      = "jdk"
 name    = "OpenJ9 JDK"
 version = "11.0.7"
 uri     = "https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.7%2B10_openj9-0.20.0/OpenJDK11U-jdk_x64_linux_openj9_11.0.7_10_openj9-0.20.0.tar.gz"
-sha256  = "placeholder"
+sha256  = "526e89f3014fec473b24c10c2464c1343e23703114983fd171b68b1599bba561"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
