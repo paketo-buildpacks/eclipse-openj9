@@ -22,6 +22,9 @@ version = "{{.version}}"
 [[stacks]]
 id = "io.buildpacks.stacks.bionic"
 
+[[stacks]]
+id = "org.cloudfoundry.stacks.cflinuxfs3"
+
 [metadata.default-versions]
 java = "11.*"
 
@@ -31,7 +34,7 @@ name    = "OpenJ9 JRE"
 version = "8.0.252"
 uri     = "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09_openj9-0.20.0/OpenJDK8U-jre_x64_linux_openj9_8u252b09_openj9-0.20.0.tar.gz"
 sha256  = "5c0ab4691ff5f8e69bb14462f2afb8d73d751b01048eacf4b426ed6d6646dc63"
-stacks  = [ "io.buildpacks.stacks.bionic" ]
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
   type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
@@ -43,7 +46,7 @@ name    = "OpenJ9 JRE"
 version = "11.0.6"
 uri     = "https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.6%2B10_openj9-0.18.0/OpenJDK11U-jre_x64_linux_openj9_11.0.6_10_openj9-0.18.0.tar.gz"
 sha256  = "273e9f6a17a27c713407883898bd137f0a4ee1b8a0a4b42a1f7ec22225e01166"
-stacks  = [ "io.buildpacks.stacks.bionic" ]
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
   type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
@@ -55,7 +58,7 @@ name    = "OpenJ9 JRE"
 version = "14.0.1"
 uri     = "https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7_openj9-0.20.0/OpenJDK14U-jre_x64_linux_openj9_14.0.1_7_openj9-0.20.0.tar.gz"
 sha256  = "de3a93957e32f44fd0435cc5fb6edaa3ea55048701a2b95b42b79dcca1c44b24"
-stacks  = [ "io.buildpacks.stacks.bionic" ]
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
   type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
@@ -67,7 +70,7 @@ name    = "OpenJ9 JDK"
 version = "8.0.252"
 uri     = "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u252-b09_openj9-0.20.0/OpenJDK8U-jdk_x64_linux_openj9_8u252b09_openj9-0.20.0.tar.gz"
 sha256  = "910ae847109a6dd1b6cf69baa7615ea2cce8cff787e5a9349a5331ce7604f3a5"
-stacks  = [ "io.buildpacks.stacks.bionic" ]
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
   type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
@@ -79,7 +82,7 @@ name    = "OpenJ9 JDK"
 version = "11.0.6"
 uri     = "https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.6%2B10_openj9-0.18.0/OpenJDK11U-jdk_x64_linux_openj9_11.0.6_10_openj9-0.18.0.tar.gz"
 sha256  = "e9b36d476dc9da8797bad6497e96f30c85ff6880e930a2ab31e34fbba87d0498"
-stacks  = [ "io.buildpacks.stacks.bionic" ]
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
   type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
@@ -91,7 +94,7 @@ name    = "OpenJ9 JDK"
 version = "14.0.1"
 uri     = "https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.1%2B7_openj9-0.20.0/OpenJDK14U-jdk_x64_linux_openj9_14.0.1_7_openj9-0.20.0.tar.gz"
 sha256  = "2350592f4b0db1439fdd48d4fa7e05b270f271dcc79b2c7f174489ee2f6b14c1"
-stacks  = [ "io.buildpacks.stacks.bionic" ]
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
   type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
@@ -103,7 +106,7 @@ name    = "JVMKill Agent"
 version = "1.16.0"
 uri     = "https://github.com/cloudfoundry/jvmkill/releases/download/v1.16.0.RELEASE/jvmkill-1.16.0-RELEASE.so"
 sha256  = "a3092627b082cb3cdbbe4b255d35687126aa604e6b613dcda33be9f7e1277162"
-stacks  = [ "io.buildpacks.stacks.bionic" ]
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
   type = "Apache-2.0"
@@ -115,7 +118,7 @@ name    = "Memory Calculator"
 version = "4.0.0"
 uri     = "https://github.com/cloudfoundry/java-buildpack-memory-calculator/releases/download/v4.0.0/memory-calculator-4.0.0.tgz"
 sha256  = "90d40eab6959a7b4059c6409c4505040e8a04f75a481f7282e53430df3edda3e"
-stacks  = [ "io.buildpacks.stacks.bionic" ]
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
   type = "Apache-2.0"
