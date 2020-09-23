@@ -92,6 +92,18 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
   uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
 [[metadata.dependencies]]
+id      = "jre"
+name    = "OpenJ9 JRE"
+version = "15.0.0"
+uri     = ""
+sha256  = ""
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
+  uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
+
+[[metadata.dependencies]]
 id      = "jdk"
 name    = "OpenJ9 JDK"
 version = "8.0.265"
@@ -121,6 +133,18 @@ name    = "OpenJ9 JDK"
 version = "14.0.2"
 uri     = "https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-14.0.2%2B12_openj9-0.21.0/OpenJDK14U-jdk_x64_linux_openj9_14.0.2_12_openj9-0.21.0.tar.gz"
 sha256  = "306f7138cdb65daaf2596ec36cafbde72088144c83b2e964f0193662e6caf3be"
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
+  [[metadata.dependencies.licenses]]
+  type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
+  uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
+
+[[metadata.dependencies]]
+id      = "jdk"
+name    = "OpenJ9 JDK"
+version = "15.0.0"
+uri     = ""
+sha256  = ""
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
