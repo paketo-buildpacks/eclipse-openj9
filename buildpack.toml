@@ -131,8 +131,8 @@ stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" 
 id      = "jdk"
 name    = "OpenJ9 JDK"
 version = "15.0.0"
-uri     = "placeholder"
-sha256  = "placeholder"
+uri     = "https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15%2B36_openj9-0.22.0/OpenJDK15U-jdk_x64_linux_openj9_15_36_openj9-0.22.0.tar.gz"
+sha256  = "3f016e23a1fba0b1d29f03415c36d54a8a33480ce1d238fbef09d38c5a69eff7"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
 [[metadata.dependencies.licenses]]
