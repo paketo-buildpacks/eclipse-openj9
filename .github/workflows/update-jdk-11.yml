@@ -27,14 +27,14 @@ jobs:
                 set -euo pipefail
 
                 mkdir -p "${HOME}"/bin
-                echo "::add-path::${HOME}/bin"
+                echo "${HOME}/bin" >> "${GITHUB_PATH}"
 
                 curl \
-                	--location \
-                	--show-error \
-                	--silent \
-                	--output "${HOME}"/bin/yj \
-                	"https://github.com/sclevine/yj/releases/download/v${YJ_VERSION}/yj-linux"
+                  --location \
+                  --show-error \
+                  --silent \
+                  --output "${HOME}"/bin/yj \
+                  "https://github.com/sclevine/yj/releases/download/v${YJ_VERSION}/yj-linux"
 
                 chmod +x "${HOME}"/bin/yj
               env:
@@ -80,7 +80,7 @@ jobs:
             - uses: peter-evans/create-pull-request@v3
               with:
                 body: Bumps `JDK 11` from `${{ steps.buildpack.outputs.old-version }}` to `${{ steps.buildpack.outputs.new-version }}`.
-                branch: update-buildpack/jdk-11
+                branch: update/buildpack/jdk-11
                 commit-message: |-
                     Bump JDK 11 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}
 
