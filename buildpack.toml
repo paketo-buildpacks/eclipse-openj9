@@ -123,6 +123,26 @@ uri     = "https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/
 sha256  = "a4ae1b7275fcfd6d87a3387edacc8e353dc95ee44f00ca5a348ea90331ec2084"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
+[[metadata.dependencies]]
+id      = "jdk"
+name    = "OpenJ9 JDK"
+version = "16.0.0"
+uri     = "placeholder"
+sha256  = "placeholder"
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
+[[metadata.dependencies.licenses]]
+type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
+uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
+
+[[metadata.dependencies]]
+id      = "jre"
+name    = "OpenJ9 JRE"
+version = "16.0.0"
+uri     = "placeholder"
+sha256  = "placeholder"
+stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
+
   [[metadata.dependencies.licenses]]
   type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
   uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
