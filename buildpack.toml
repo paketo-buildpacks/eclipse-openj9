@@ -139,8 +139,8 @@ uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 id      = "jre"
 name    = "OpenJ9 JRE"
 version = "16.0.0"
-uri     = "placeholder"
-sha256  = "placeholder"
+uri     = "https://github.com/AdoptOpenJDK/openjdk16-binaries/releases/download/jdk-16%2B36_openj9-0.25.0/OpenJDK16-jre_x64_linux_openj9_16_36_openj9-0.25.0.tar.gz"
+sha256  = "302b8b9bba4f51d0a9ac087ed91929dbd3ae52cf5a5b6c150373563012db60d9"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
