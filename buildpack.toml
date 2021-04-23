@@ -70,9 +70,9 @@ uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 [[metadata.dependencies]]
 id      = "jre"
 name    = "OpenJ9 JRE"
-version = "8.0.282"
-uri     = "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u282-b08_openj9-0.24.0/OpenJDK8U-jre_x64_linux_openj9_8u282b08_openj9-0.24.0.tar.gz"
-sha256  = "4fad259c32eb23ec98925c8b2cf28aaacbdb55e034db74c31a7636e75b6af08d"
+version = "8.0.292"
+uri     = "https://github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10_openj9-0.26.0/OpenJDK8U-jre_x64_linux_openj9_8u292b10_openj9-0.26.0.tar.gz"
+sha256  = "6d5b67979e0935febe893895b622647bf8a59df6093ae57074db11d2ac9373ea"
 stacks  = [ "io.buildpacks.stacks.bionic", "org.cloudfoundry.stacks.cflinuxfs3" ]
 
   [[metadata.dependencies.licenses]]
