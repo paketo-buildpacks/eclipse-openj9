@@ -42,11 +42,13 @@ jobs:
                 YJ_VERSION: 5.0.0
             - uses: actions/checkout@v2
             - id: dependency
-              uses: docker://ghcr.io/paketo-buildpacks/actions/adopt-openjdk-dependency:main
+              uses: docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
               with:
-                implementation: openj9
-                type: jdk
-                version: '[16,17)'
+                glob: ibm-semeru-open-jdk_x64_linux_.+_openj9-.+.tar.gz
+                owner: ibmruntimes
+                repository: semeru16-binaries
+                tag_filter: jdk(.*16.)
+                token: ${{ secrets.JAVA_GITHUB_TOKEN }}
             - id: buildpack
               name: Update Buildpack Dependency
               run: |
