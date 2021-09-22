@@ -20,54 +20,80 @@ dependencies:
 - name:            JDK 8
   id:              jdk
   version_pattern: "8(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
-  uses:            docker://ghcr.io/paketo-buildpacks/actions/adopt-openjdk-dependency:main
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
-    implementation: openj9
-    type:           jdk
-    version:        "[8,9)"
+    glob: ibm-semeru-open-jdk_x64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru8-binaries
+    tag_filter: jdk(.*8.)
+    token: ${{ secrets.JAVA_GITHUB_TOKEN }}
 - name:            JRE 8
   id:              jre
   version_pattern: "8(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
-  uses:            docker://ghcr.io/paketo-buildpacks/actions/adopt-openjdk-dependency:main
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
-    implementation: openj9
-    type:           jre
-    version:        "[8,9)"
+    glob: ibm-semeru-open-jre_x64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru8-binaries
+    tag_filter: jre(.*8.)
+    token: ${{ secrets.JAVA_GITHUB_TOKEN }}
 - name:            JDK 11
   id:              jdk
   version_pattern: "11(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
-  uses:            docker://ghcr.io/paketo-buildpacks/actions/adopt-openjdk-dependency:main
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
-    implementation: openj9
-    type:           jdk
-    version:        "[11,12)"
+    glob: ibm-semeru-open-jdk_x64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru11-binaries
+    tag_filter: jdk(.*11.)
+    token: ${{ secrets.JAVA_GITHUB_TOKEN }}
 - name:            JRE 11
   id:              jre
   version_pattern: "11(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
-  uses:            docker://ghcr.io/paketo-buildpacks/actions/adopt-openjdk-dependency:main
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
-    implementation: openj9
-    type:           jre
-    version:        "[11,12)"
+    glob: ibm-semeru-open-jre_x64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru11-binaries
+    tag_filter: jre(.*11.)
+    token: ${{ secrets.JAVA_GITHUB_TOKEN }}
 - name:            JDK 16
   id:              jdk
   version_pattern: "16(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
-  uses:            docker://ghcr.io/paketo-buildpacks/actions/adopt-openjdk-dependency:main
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
-    implementation: openj9
-    type:           jdk
-    version:        "[16,17)"
+    glob: ibm-semeru-open-jdk_x64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru16-binaries
+    tag_filter: jdk(.*16.)
+    token: ${{ secrets.JAVA_GITHUB_TOKEN }}
 - name:            JRE 16
   id:              jre
   version_pattern: "16(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
-  uses:            docker://ghcr.io/paketo-buildpacks/actions/adopt-openjdk-dependency:main
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
-    implementation: openj9
-    type:           jre
-    version:        "[16,17)"
-- id:   jvmkill
-  uses: docker://ghcr.io/paketo-buildpacks/actions/github-release-dependency:main
+    glob: ibm-semeru-open-jre_x64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru16-binaries
+    tag_filter: jre(.*16.)
+    token: ${{ secrets.JAVA_GITHUB_TOKEN }}
+- name:            JDK 17
+  id:              jdk
+  version_pattern: "17(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
-    owner:      cloudfoundry
-    repository: jvmkill
-    token:      ${{ secrets.JAVA_GITHUB_TOKEN }}
+    glob: ibm-semeru-open-jdk_x64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru17-binaries
+    tag_filter: jdk(.*17.)
+    token: ${{ secrets.JAVA_GITHUB_TOKEN }}
+- name:            JRE 17
+  id:              jre
+  version_pattern: "17(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
+  with:
+    glob: ibm-semeru-open-jre_x64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru17-binaries
+    tag_filter: jre(.*17.)
+    token: ${{ secrets.JAVA_GITHUB_TOKEN }}

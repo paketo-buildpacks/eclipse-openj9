@@ -149,16 +149,29 @@ stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
   uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
 [[metadata.dependencies]]
-id      = "jvmkill"
-name    = "JVMKill Agent"
-version = "1.16.0"
-uri     = "https://github.com/cloudfoundry/jvmkill/releases/download/v1.16.0.RELEASE/jvmkill-1.16.0-RELEASE.so"
-sha256  = "a3092627b082cb3cdbbe4b255d35687126aa604e6b613dcda33be9f7e1277162"
+id      = "jdk"
+name    = "OpenJ9 JDK"
+version = "17.0.0"
+uri     = ""
+sha256  = "bad"
 stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
-  [[metadata.dependencies.licenses]]
-  type = "Apache-2.0"
-  uri  = "https://github.com/cloudfoundry/jvmkill/blob/main/LICENSE"
+[[metadata.dependencies]]
+id      = "jre"
+name    = "OpenJ9 JRE"
+version = "17.0.0"
+uri     = ""
+sha256  = "bad"
+stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
+
+[[metadata.dependencies.licenses]]
+type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
+uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
+
+[[metadata.dependencies.licenses]]
+type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
+uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
+
 
 [metadata]
 pre-package   = "scripts/build.sh"
