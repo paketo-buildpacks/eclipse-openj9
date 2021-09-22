@@ -60,6 +60,36 @@ default     = ""
 launch      = true
 
 [[metadata.configurations]]
+name        = "BPL_JMX_ENABLED"
+description = "enables Java Management Extensions (JMX)"
+default     = "false"
+launch      = true
+
+[[metadata.configurations]]
+name        = "BPL_JMX_PORT"
+description = "configure the JMX port"
+default     = "5000"
+launch      = true
+
+[[metadata.configurations]]
+name        = "BPL_DEBUG_ENABLED"
+description = "enables Java remote debugging support"
+default     = "false"
+launch      = true
+
+[[metadata.configurations]]
+name        = "BPL_DEBUG_PORT"
+description = "configure the remote debugging port"
+default     = "8000"
+launch      = true
+
+[[metadata.configurations]]
+name        = "BPL_DEBUG_SUSPEND"
+description = "configure whether to suspend execution until a debugger has attached"
+default     = "false"
+launch      = true
+
+[[metadata.configurations]]
 name        = "BP_JVM_VERSION"
 description = "the Java version"
 default     = "11"
@@ -156,6 +186,10 @@ uri     = ""
 sha256  = "bad"
 stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
+  [[metadata.dependencies.licenses]]
+  type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
+  uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
+
 [[metadata.dependencies]]
 id      = "jre"
 name    = "OpenJ9 JRE"
@@ -164,14 +198,9 @@ uri     = ""
 sha256  = "bad"
 stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
-[[metadata.dependencies.licenses]]
-type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
-uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
-
-[[metadata.dependencies.licenses]]
-type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
-uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
-
+  [[metadata.dependencies.licenses]]
+  type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
+  uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
 [metadata]
 pre-package   = "scripts/build.sh"
