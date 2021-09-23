@@ -110,7 +110,7 @@ launch      = true
 id      = "jdk"
 name    = "OpenJ9 JDK"
 version = "8.0.302"
-uri     = "https://github.com/AdoptOpenJDK/semeru8-binaries/releases/download/jdk8u302-b08_openj9-0.27.0/ibm-semeru-open-jdk_x64_linux_8u302b08_openj9-0.27.0.tar.gz"
+uri     = "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u302-b08_openj9-0.27.0/ibm-semeru-open-jdk_x64_linux_8u302b08_openj9-0.27.0.tar.gz"
 sha256  = "f1fea5d3049754ad13f9b90d90beb9157dbd7e84e00c255c2cef81441f0f348e"
 stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
