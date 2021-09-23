@@ -25,7 +25,7 @@ dependencies:
     glob: ibm-semeru-open-jdk_x64_linux_.+_openj9-.+.tar.gz
     owner: ibmruntimes
     repository: semeru8-binaries
-    tag_filter: jdk(.*8.)
+    tag_filter: jdk(.*8.*)
     token: ${{ secrets.JAVA_GITHUB_TOKEN }}
 - name:            JRE 8
   id:              jre
@@ -35,7 +35,7 @@ dependencies:
     glob: ibm-semeru-open-jre_x64_linux_.+_openj9-.+.tar.gz
     owner: ibmruntimes
     repository: semeru8-binaries
-    tag_filter: jre(.*8.)
+    tag_filter: jdk(.*8.*)
     token: ${{ secrets.JAVA_GITHUB_TOKEN }}
 - name:            JDK 11
   id:              jdk
@@ -45,7 +45,7 @@ dependencies:
     glob: ibm-semeru-open-jdk_x64_linux_.+_openj9-.+.tar.gz
     owner: ibmruntimes
     repository: semeru11-binaries
-    tag_filter: jdk(.*11.)
+    tag_filter: jdk(.*11.*)
     token: ${{ secrets.JAVA_GITHUB_TOKEN }}
 - name:            JRE 11
   id:              jre
@@ -55,7 +55,7 @@ dependencies:
     glob: ibm-semeru-open-jre_x64_linux_.+_openj9-.+.tar.gz
     owner: ibmruntimes
     repository: semeru11-binaries
-    tag_filter: jre(.*11.)
+    tag_filter: jdk(.*11.*)
     token: ${{ secrets.JAVA_GITHUB_TOKEN }}
 - name:            JDK 16
   id:              jdk
@@ -65,7 +65,7 @@ dependencies:
     glob: ibm-semeru-open-jdk_x64_linux_.+_openj9-.+.tar.gz
     owner: ibmruntimes
     repository: semeru16-binaries
-    tag_filter: jdk(.*16.)
+    tag_filter: jdk(.*16.*)
     token: ${{ secrets.JAVA_GITHUB_TOKEN }}
 - name:            JRE 16
   id:              jre
@@ -75,7 +75,7 @@ dependencies:
     glob: ibm-semeru-open-jre_x64_linux_.+_openj9-.+.tar.gz
     owner: ibmruntimes
     repository: semeru16-binaries
-    tag_filter: jre(.*16.)
+    tag_filter: jdk(.*16.*)
     token: ${{ secrets.JAVA_GITHUB_TOKEN }}
 - name:            JDK 17
   id:              jdk
@@ -85,7 +85,7 @@ dependencies:
     glob: ibm-semeru-open-jdk_x64_linux_.+_openj9-.+.tar.gz
     owner: ibmruntimes
     repository: semeru17-binaries
-    tag_filter: jdk(.*17.)
+    tag_filter: jdk(.*17.*)
     token: ${{ secrets.JAVA_GITHUB_TOKEN }}
 - name:            JRE 17
   id:              jre
@@ -95,5 +95,5 @@ dependencies:
     glob: ibm-semeru-open-jre_x64_linux_.+_openj9-.+.tar.gz
     owner: ibmruntimes
     repository: semeru17-binaries
-    tag_filter: jre(.*17.)
+    tag_filter: jdk(.*17.*)
     token: ${{ secrets.JAVA_GITHUB_TOKEN }}
