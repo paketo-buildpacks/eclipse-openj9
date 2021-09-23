@@ -60,6 +60,36 @@ default     = ""
 launch      = true
 
 [[metadata.configurations]]
+name        = "BPL_JMX_ENABLED"
+description = "enables Java Management Extensions (JMX)"
+default     = "false"
+launch      = true
+
+[[metadata.configurations]]
+name        = "BPL_JMX_PORT"
+description = "configure the JMX port"
+default     = "5000"
+launch      = true
+
+[[metadata.configurations]]
+name        = "BPL_DEBUG_ENABLED"
+description = "enables Java remote debugging support"
+default     = "false"
+launch      = true
+
+[[metadata.configurations]]
+name        = "BPL_DEBUG_PORT"
+description = "configure the remote debugging port"
+default     = "8000"
+launch      = true
+
+[[metadata.configurations]]
+name        = "BPL_DEBUG_SUSPEND"
+description = "configure whether to suspend execution until a debugger has attached"
+default     = "false"
+launch      = true
+
+[[metadata.configurations]]
 name        = "BP_JVM_VERSION"
 description = "the Java version"
 default     = "11"
@@ -80,7 +110,7 @@ launch      = true
 id      = "jdk"
 name    = "OpenJ9 JDK"
 version = "8.0.302"
-uri     = "https://github.com/AdoptOpenJDK/semeru8-binaries/releases/download/jdk8u302-b08_openj9-0.27.0/ibm-semeru-open-jdk_x64_linux_8u302b08_openj9-0.27.0.tar.gz"
+uri     = "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u302-b08_openj9-0.27.0/ibm-semeru-open-jdk_x64_linux_8u302b08_openj9-0.27.0.tar.gz"
 sha256  = "f1fea5d3049754ad13f9b90d90beb9157dbd7e84e00c255c2cef81441f0f348e"
 stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
@@ -104,7 +134,7 @@ stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 id      = "jdk"
 name    = "OpenJ9 JDK"
 version = "11.0.12"
-uri     = "https://github.com/AdoptOpenJDK/semeru11-binaries/releases/download/jdk-11.0.12%2B7_openj9-0.27.0/ibm-semeru-open-jdk_x64_linux_11.0.12_7_openj9-0.27.0.tar.gz"
+uri     = "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.12%2B7_openj9-0.27.0/ibm-semeru-open-jdk_x64_linux_11.0.12_7_openj9-0.27.0.tar.gz"
 sha256  = "4c2d776f69e3ff7d01cd57c0938b7a7f058264425faf18e3708b905e93f915c4"
 stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
@@ -128,7 +158,7 @@ stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 id      = "jdk"
 name    = "OpenJ9 JDK"
 version = "16.0.2"
-uri     = "https://github.com/AdoptOpenJDK/semeru16-binaries/releases/download/jdk-16.0.2%2B7_openj9-0.27.0/ibm-semeru-open-jdk_x64_linux_16.0.2_7_openj9-0.27.0.tar.gz"
+uri     = "https://github.com/ibmruntimes/semeru16-binaries/releases/download/jdk-16.0.2%2B7_openj9-0.27.0/ibm-semeru-open-jdk_x64_linux_16.0.2_7_openj9-0.27.0.tar.gz"
 sha256  = "1349eb9a1d9af491a1984d66a80126730357c4a5c4fcbe7112a2c832f6c0886e"
 stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
@@ -156,6 +186,10 @@ uri     = ""
 sha256  = "bad"
 stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
+  [[metadata.dependencies.licenses]]
+  type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
+  uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
+
 [[metadata.dependencies]]
 id      = "jre"
 name    = "OpenJ9 JRE"
@@ -164,14 +198,9 @@ uri     = ""
 sha256  = "bad"
 stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
-[[metadata.dependencies.licenses]]
-type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
-uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
-
-[[metadata.dependencies.licenses]]
-type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
-uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
-
+  [[metadata.dependencies.licenses]]
+  type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
+  uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
 [metadata]
 pre-package   = "scripts/build.sh"
