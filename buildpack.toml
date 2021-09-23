@@ -146,7 +146,7 @@ uri  = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 id      = "jre"
 name    = "OpenJ9 JRE"
 version = "11.0.12"
-uri     = "https://github.com/AdoptOpenJDK/semeru11-binaries/releases/download/jdk-11.0.12%2B7_openj9-0.27.0/ibm-semeru-open-jre_x64_linux_11.0.12_7_openj9-0.27.0.tar.gz"
+uri     = "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.12%2B7_openj9-0.27.0/ibm-semeru-open-jre_x64_linux_11.0.12_7_openj9-0.27.0.tar.gz"
 sha256  = "f352998f6fdf0b84f63c563608be57f30aa3f14c8117c1219422dbc712ad4f81"
 stacks  = [ "io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*" ]
 
