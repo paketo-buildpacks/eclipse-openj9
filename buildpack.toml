@@ -149,30 +149,6 @@ api = "0.6"
       type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
       uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
-  [[metadata.dependencies]]
-    id = "jdk"
-    name = "OpenJ9 JDK"
-    sha256 = "1349eb9a1d9af491a1984d66a80126730357c4a5c4fcbe7112a2c832f6c0886e"
-    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/ibmruntimes/semeru16-binaries/releases/download/jdk-16.0.2%2B7_openj9-0.27.0/ibm-semeru-open-jdk_x64_linux_16.0.2_7_openj9-0.27.0.tar.gz"
-    version = "16.0.2"
-
-    [[metadata.dependencies.licenses]]
-      type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
-      uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
-
-  [[metadata.dependencies]]
-    id = "jre"
-    name = "OpenJ9 JRE"
-    sha256 = "b077cd0b35d3ed1927c22e5b498264ecff67297992809056187b42662edfc536"
-    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/ibmruntimes/semeru16-binaries/releases/download/jdk-16.0.2%2B7_openj9-0.27.0/ibm-semeru-open-jre_x64_linux_16.0.2_7_openj9-0.27.0.tar.gz"
-    version = "16.0.2"
-
-    [[metadata.dependencies.licenses]]
-      type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
-      uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
-
   # Uncomment when Semeru project releases Java 17
   #
   # [[metadata.dependencies]]

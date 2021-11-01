@@ -57,26 +57,6 @@ dependencies:
     repository: semeru11-binaries
     tag_filter: jdk(.*11.*)
     token: ${{ secrets.JAVA_GITHUB_TOKEN }}
-- name:            JDK 16
-  id:              jdk
-  version_pattern: "16(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
-  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
-  with:
-    glob: ibm-semeru-open-jdk_x64_linux_.+_openj9-.+.tar.gz
-    owner: ibmruntimes
-    repository: semeru16-binaries
-    tag_filter: jdk(.*16.*)
-    token: ${{ secrets.JAVA_GITHUB_TOKEN }}
-- name:            JRE 16
-  id:              jre
-  version_pattern: "16(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
-  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
-  with:
-    glob: ibm-semeru-open-jre_x64_linux_.+_openj9-.+.tar.gz
-    owner: ibmruntimes
-    repository: semeru16-binaries
-    tag_filter: jdk(.*16.*)
-    token: ${{ secrets.JAVA_GITHUB_TOKEN }}
 - name:            JDK 17
   id:              jdk
   version_pattern: "17(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
