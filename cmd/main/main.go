@@ -34,6 +34,6 @@ func main() {
 	_ = helper.ActiveProcessorCount{Logger: logger}
 	libpak.Main(
 		libjvm.Detect{},
-		libjvm.Build{Logger: bard.NewLogger(os.Stdout)},
+		libjvm.Build{Logger: logger},
 	)
 }
