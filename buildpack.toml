@@ -159,7 +159,7 @@ api = "0.7"
     version = "11.0.12"
     purl = "pkg:generic/ibmruntimes/semeru-jre@11.0.12"
     cpes = [
-      ""
+      "cpe:2.3:a:eclipse:openj9:0.27.0:*:*:*:*:*:*:*"
     ]
 
     [[metadata.dependencies.licenses]]
