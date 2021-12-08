@@ -106,11 +106,11 @@ api = "0.7"
     cpes = ["cpe:2.3:a:eclipse:openj9:0.29.0:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "OpenJ9 JDK"
-    purl = "pkg:generic/ibmruntimes/semeru-jdk@8.0.302"
-    sha256 = "f1fea5d3049754ad13f9b90d90beb9157dbd7e84e00c255c2cef81441f0f348e"
+    purl = "pkg:generic/ibmruntimes/semeru-jdk@8.0.312"
+    sha256 = "c7306112201b45cc8b96e6d6fb3f6de727ddbbb51022cbd9cff98b661e37a510"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u302-b08_openj9-0.27.0/ibm-semeru-open-jdk_x64_linux_8u302b08_openj9-0.27.0.tar.gz"
-    version = "8.0.302"
+    uri = "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u312-b07_openj9-0.29.0/ibm-semeru-open-jdk_x64_linux_8u312b07_openj9-0.29.0.tar.gz"
+    version = "8.0.312"
 
     [[metadata.dependencies.licenses]]
       type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
@@ -148,11 +148,11 @@ api = "0.7"
     cpes = ["cpe:2.3:a:eclipse:openj9:0.29.0:*:*:*:*:*:*:*"]
     id = "jre"
     name = "OpenJ9 JRE"
-    purl = "pkg:generic/ibmruntimes/semeru-jre@11.0.12"
-    sha256 = "f352998f6fdf0b84f63c563608be57f30aa3f14c8117c1219422dbc712ad4f81"
+    purl = "pkg:generic/ibmruntimes/semeru-jre@11.0.13"
+    sha256 = "78eb54af15fac39eb2d254f51f0302aa213d3ad838f17766a9d081ca783edff4"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.12%2B7_openj9-0.27.0/ibm-semeru-open-jre_x64_linux_11.0.12_7_openj9-0.27.0.tar.gz"
-    version = "11.0.12"
+    uri = "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jre_x64_linux_11.0.13_8_openj9-0.29.0.tar.gz"
+    version = "11.0.13"
 
     [[metadata.dependencies.licenses]]
       type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
