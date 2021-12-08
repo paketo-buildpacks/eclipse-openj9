@@ -134,11 +134,11 @@ api = "0.7"
     cpes = ["cpe:2.3:a:eclipse:openj9:0.29.0:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "OpenJ9 JDK"
-    purl = "pkg:generic/ibmruntimes/semeru-jdk@11.0.12"
-    sha256 = "4c2d776f69e3ff7d01cd57c0938b7a7f058264425faf18e3708b905e93f915c4"
+    purl = "pkg:generic/ibmruntimes/semeru-jdk@11.0.13"
+    sha256 = "3975e2732cf632ca8f41c237ba7e033fd96bda262b79861f83b4e2ac62c90c3d"
     stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
-    uri = "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.12%2B7_openj9-0.27.0/ibm-semeru-open-jdk_x64_linux_11.0.12_7_openj9-0.27.0.tar.gz"
-    version = "11.0.12"
+    uri = "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.13%2B8_openj9-0.29.0/ibm-semeru-open-jdk_x64_linux_11.0.13_8_openj9-0.29.0.tar.gz"
+    version = "11.0.13"
 
     [[metadata.dependencies.licenses]]
       type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
