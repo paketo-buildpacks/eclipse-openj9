@@ -173,7 +173,7 @@ api = "0.7"
       uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:eclipse:openj9:0.29.1:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:eclipse:openj9:17.0.1:*:*:*:*:*:*:*"]
     id = "jre"
     name = "OpenJ9 JRE"
     purl = "pkg:generic/ibmruntimes/semeru-jre@17.0.1"
