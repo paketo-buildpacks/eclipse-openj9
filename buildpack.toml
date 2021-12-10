@@ -158,6 +158,34 @@ api = "0.7"
       type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
       uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
+  [[metadata.dependencies]]
+    cpes = ["cpe:2.3:a:eclipse:openj9:0.29.1:*:*:*:*:*:*:*"]
+    id = "jdk"
+    name = "OpenJ9 JDK"
+    purl = "pkg:generic/ibmruntimes/semeru-jre@17.0.1"
+    sha256 = "154f6411742ee1f8cbf004d72e7e71053b9ad4e89090cb930b6f16951e56503e"
+    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
+    uri = "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jdk_x64_linux_17.0.1_12_openj9-0.29.1.tar.gz"
+    version = "17.0.1"
+
+    [[metadata.dependencies.licenses]]
+      type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
+      uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
+
+  [[metadata.dependencies]]
+    cpes = ["cpe:2.3:a:eclipse:openj9:0.29.1:*:*:*:*:*:*:*"]
+    id = "jre"
+    name = "OpenJ9 JRE"
+    purl = "pkg:generic/ibmruntimes/semeru-jre@17.0.1"
+    sha256 = "69f1f7a6b3d4a701f3c25ac338768d8a414594fa2c50ddfbd8c014e8a5e790db"
+    stacks = ["io.buildpacks.stacks.bionic", "io.paketo.stacks.tiny", "*"]
+    uri = "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.1%2B12_openj9-0.29.1/ibm-semeru-open-jre_x64_linux_17.0.1_12_openj9-0.29.1.tar.gz"
+    version = "17.0.1"
+
+    [[metadata.dependencies.licenses]]
+      type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
+      uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
+
 [[stacks]]
   id = "io.buildpacks.stacks.bionic"
 

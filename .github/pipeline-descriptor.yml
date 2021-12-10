@@ -20,7 +20,8 @@ dependencies:
 - name:            JDK 8
   id:              jdk
   version_pattern: "8(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
-  cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
+  # TODO: change back to `"[\\d]+\\.[\\d]+\\.[\\d]+"` when update to libpak 1.57.1 or 1.58.0
+  cpe_pattern:     "0\\.29\\.0"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
     glob: ibm-semeru-open-jdk_x64_linux_.+_openj9-.+.tar.gz
@@ -31,7 +32,8 @@ dependencies:
 - name:            JRE 8
   id:              jre
   version_pattern: "8(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
-  cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
+  # TODO: change back to `"[\\d]+\\.[\\d]+\\.[\\d]+"` when update to libpak 1.57.1 or 1.58.0
+  cpe_pattern:     "0\\.29\\.0"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
     glob: ibm-semeru-open-jre_x64_linux_.+_openj9-.+.tar.gz
@@ -42,7 +44,8 @@ dependencies:
 - name:            JDK 11
   id:              jdk
   version_pattern: "11(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
-  cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
+  # TODO: change back to `"[\\d]+\\.[\\d]+\\.[\\d]+"` when update to libpak 1.57.1 or 1.58.0
+  cpe_pattern:     "0\\.29\\.0"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
     glob: ibm-semeru-open-jdk_x64_linux_.+_openj9-.+.tar.gz
@@ -53,7 +56,8 @@ dependencies:
 - name:            JRE 11
   id:              jre
   version_pattern: "11(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
-  cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
+  # TODO: change back to `"[\\d]+\\.[\\d]+\\.[\\d]+"` when update to libpak 1.57.1 or 1.58.0
+  cpe_pattern:     "0\\.29\\.0"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
     glob: ibm-semeru-open-jre_x64_linux_.+_openj9-.+.tar.gz
@@ -64,7 +68,8 @@ dependencies:
 - name:            JDK 17
   id:              jdk
   version_pattern: "17(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
-  cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
+  # TODO: change back to `"[\\d]+\\.[\\d]+\\.[\\d]+"` when update to libpak 1.57.1 or 1.58.0
+  cpe_pattern:     "0\\.29\\.1"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
     glob: ibm-semeru-open-jdk_x64_linux_.+_openj9-.+.tar.gz
@@ -75,7 +80,8 @@ dependencies:
 - name:            JRE 17
   id:              jre
   version_pattern: "17(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
-  cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
+  # TODO: change back to `"[\\d]+\\.[\\d]+\\.[\\d]+"` when update to libpak 1.57.1 or 1.58.0
+  cpe_pattern:     "0\\.29\\.1"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
     glob: ibm-semeru-open-jre_x64_linux_.+_openj9-.+.tar.gz
