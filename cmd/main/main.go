@@ -17,11 +17,10 @@
 package main
 
 import (
+	"github.com/paketo-buildpacks/libjvm"
+	"github.com/paketo-buildpacks/libjvm/helper"
 	"os"
 
-	"github.com/paketo-buildpacks/libjvm/helper"
-
-	"github.com/paketo-buildpacks/libjvm"
 	"github.com/paketo-buildpacks/libpak"
 	"github.com/paketo-buildpacks/libpak/bard"
 )
@@ -34,6 +33,6 @@ func main() {
 	_ = helper.ActiveProcessorCount{Logger: logger}
 	libpak.Main(
 		libjvm.Detect{},
-		libjvm.Build{Logger: logger},
+		libjvm.NewBuild(logger),
 	)
 }
