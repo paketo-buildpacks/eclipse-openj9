@@ -47,7 +47,7 @@ jobs:
                 glob: ibm-semeru-open-jdk_x64_linux_.+_openj9-.+.tar.gz
                 owner: ibmruntimes
                 repository: semeru8-binaries
-                tag_filter: jdk(.*8.*)
+                tag_filter: jdk(8.*)
                 token: ${{ secrets.JAVA_GITHUB_TOKEN }}
             - name: Update Buildpack Dependency
               id: buildpack
