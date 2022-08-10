@@ -22,7 +22,7 @@ docker_credentials:
 dependencies:
 - name:            JDK 8
   id:              jdk
-  version_pattern: "8(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  version_pattern: "^8(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
   cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
@@ -33,7 +33,7 @@ dependencies:
     token: ${{ secrets.JAVA_GITHUB_TOKEN }}
 - name:            JRE 8
   id:              jre
-  version_pattern: "8(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  version_pattern: "^8(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
   cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
