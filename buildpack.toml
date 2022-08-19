@@ -171,13 +171,13 @@ api = "0.7"
       uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:eclipse:openj9:0.33.0:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:eclipse:openj9:0.33.1:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "OpenJ9 JDK"
     purl = "pkg:generic/ibmruntimes/semeru-jdk@17.0.4"
-    sha256 = "78ae15d9e01fce3a473f4d6a90c331fb766211b950931088c2a85590f178ad39"
+    sha256 = "dcdacbff5f4c8d81d5cbf5b7385a37b7935ae3b35b233b9b5d9de059246dd1c7"
     stacks = ["*"]
-    uri = "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.4%2B8_openj9-0.33.0/ibm-semeru-open-jdk_x64_linux_17.0.4_8_openj9-0.33.0.tar.gz"
+    uri = "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.4.1%2B1_openj9-0.33.1/ibm-semeru-open-jdk_x64_linux_17.0.4.1_1_openj9-0.33.1.tar.gz"
     version = "17.0.4"
 
     [[metadata.dependencies.licenses]]
