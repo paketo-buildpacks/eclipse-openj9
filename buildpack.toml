@@ -19,7 +19,7 @@ api = "0.7"
   homepage = "https://github.com/paketo-buildpacks/eclipse-openj9"
   id = "paketo-buildpacks/eclipse-openj9"
   keywords = ["java", "jvm", "jre", "jdk"]
-  name = "Paketo Eclipse OpenJ9 Buildpack"
+  name = "Paketo Buildpack for Eclipse OpenJ9"
   sbom-formats = ["application/vnd.cyclonedx+json", "application/vnd.syft+json"]
   version = "{{.version}}"
 
