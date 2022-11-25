@@ -198,33 +198,5 @@ api = "0.7"
       type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
       uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
-  [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:eclipse:openj9:0.33.0:*:*:*:*:*:*:*"]
-    id = "jdk"
-    name = "OpenJ9 JDK"
-    purl = "pkg:generic/ibmruntimes/semeru-jdk@18.0.2"
-    sha256 = "48a7ea9b5043e5476b63d3b77b3bf01d71fd7fb53dd76db13865ce8bf8d4c09f"
-    stacks = ["*"]
-    uri = "https://github.com/ibmruntimes/semeru18-binaries/releases/download/jdk-18.0.2%2B9_openj9-0.33.0/ibm-semeru-open-jdk_x64_linux_18.0.2_9_openj9-0.33.0.tar.gz"
-    version = "18.0.2"
-
-    [[metadata.dependencies.licenses]]
-      type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
-      uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
-
-  [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:eclipse:openj9:0.33.0:*:*:*:*:*:*:*"]
-    id = "jre"
-    name = "OpenJ9 JRE"
-    purl = "pkg:generic/ibmruntimes/semeru-jre@18.0.2"
-    sha256 = "31f9c08f3b742e4055efa6e4bbf8d9e5be02c775c8fe2c68dd4a460a8ed52c28"
-    stacks = ["*"]
-    uri = "https://github.com/ibmruntimes/semeru18-binaries/releases/download/jdk-18.0.2%2B9_openj9-0.33.0/ibm-semeru-open-jre_x64_linux_18.0.2_9_openj9-0.33.0.tar.gz"
-    version = "18.0.2"
-
-    [[metadata.dependencies.licenses]]
-      type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
-      uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
-
 [[stacks]]
   id = "*"
