@@ -146,10 +146,10 @@ api = "0.7"
     cpes = ["cpe:2.3:a:eclipse:openj9:0.40.0:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "OpenJ9 JDK"
-    purl = "pkg:generic/ibmruntimes/semeru-jdk@11.0.19"
-    sha256 = "37700b66221fbc657a695c94882f398c23350d27ebe72c260cfc679ea87134ce"
+    purl = "pkg:generic/ibmruntimes/semeru-jdk@11.0.20.1"
+    sha256 = "452fc28b62fd9b8beb163c3fdfacdfe28bf00ba67f4bbca5107cf32c35f5782d"
     stacks = ["*"]
-    uri = "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.20%2B8_openj9-0.40.0/ibm-semeru-open-jdk_x64_linux_11.0.20_8_openj9-0.40.0.tar.gz"
+    uri = "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.20.1%2B1_openj9-0.40.0/ibm-semeru-open-jdk_x64_linux_11.0.20.1_1_openj9-0.40.0.tar.gz"
     version = "11.0.20"
 
     [[metadata.dependencies.licenses]]
@@ -188,10 +188,10 @@ api = "0.7"
     cpes = ["cpe:2.3:a:eclipse:openj9:0.40.0:*:*:*:*:*:*:*"]
     id = "jre"
     name = "OpenJ9 JRE"
-    purl = "pkg:generic/ibmruntimes/semeru-jre@17.0.5"
-    sha256 = "461aab09409b3ac26ded0ca921171e141c6b1400a17d8026e924109518b365d4"
+    purl = "pkg:generic/ibmruntimes/semeru-jre@17.0.8.1"
+    sha256 = "3fbfda5ac68c81dd1535203b4ed9e0f3943ce4eca5c74d9fb0a0d6146fee53e3"
     stacks = ["*"]
-    uri = "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.8%2B7_openj9-0.40.0/ibm-semeru-open-jre_x64_linux_17.0.8_7_openj9-0.40.0.tar.gz"
+    uri = "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.8.1%2B1_openj9-0.40.0/ibm-semeru-open-jre_x64_linux_17.0.8.1_1_openj9-0.40.0.tar.gz"
     version = "17.0.8"
 
     [[metadata.dependencies.licenses]]
