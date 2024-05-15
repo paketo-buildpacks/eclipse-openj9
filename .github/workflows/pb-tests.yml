@@ -103,7 +103,7 @@ jobs:
                 export CGO_ENABLED=0
 
                 if [[ "${INCLUDE_DEPENDENCIES}" == "true" ]]; then
-                  BP_DEBUG=true create-package \
+                  create-package \
                     --source "${SOURCE_PATH:-.}" \
                     --cache-location "${HOME}"/carton-cache \
                     --destination "${HOME}"/buildpack \

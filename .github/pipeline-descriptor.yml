@@ -111,3 +111,100 @@ dependencies:
     repository: semeru21-binaries
     tag_filter: jdk(.*21.*)
     token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+# ARM64
+- name:            JDK 8 ARM64
+  id:              jdk
+  version_pattern: "^8(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
+  with:
+    glob: ibm-semeru-open-jdk_aarch64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru8-binaries
+    tag_filter: jdk(.*8.*)
+    token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+    arch: arm64
+- name:            JRE 8 ARM64
+  id:              jre
+  version_pattern: "^8(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
+  with:
+    glob: ibm-semeru-open-jre_aarch64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru8-binaries
+    tag_filter: jdk(.*8.*)
+    token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+    arch: arm64
+- name:            JDK 11 ARM64
+  id:              jdk
+  version_pattern: "^11(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  cpe_pattern:    "[\\d]+\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
+  with:
+    glob: ibm-semeru-open-jdk_aarch64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru11-binaries
+    tag_filter: jdk(.*11.*)
+    token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+    arch: arm64
+- name:            JRE 11 ARM64
+  id:              jre
+  version_pattern: "^11(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
+  with:
+    glob: ibm-semeru-open-jre_aarch64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru11-binaries
+    tag_filter: jdk(.*11.*)
+    token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+    arch: arm64
+- name:            JDK 17 ARM64
+  id:              jdk
+  version_pattern: "^17(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
+  with:
+    glob: ibm-semeru-open-jdk_aarch64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru17-binaries
+    tag_filter: jdk(.*17.*)
+    token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+    arch: arm64
+- name:            JRE 17 ARM64
+  id:              jre
+  version_pattern: "^17(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
+  with:
+    glob: ibm-semeru-open-jre_aarch64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru17-binaries
+    tag_filter: jdk(.*17.*)
+    token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+    arch: arm64
+- name:            JDK 21 ARM64
+  id:              jdk
+  version_pattern: "^21(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
+  with:
+    glob: ibm-semeru-open-jdk_aarch64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru21-binaries
+    tag_filter: jdk(.*21.*)
+    token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+    arch: arm64
+- name:            JRE 21 ARM64
+  id:              jre
+  version_pattern: "^21(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
+  with:
+    glob: ibm-semeru-open-jre_aarch64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru21-binaries
+    tag_filter: jdk(.*21.*)
+    token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+    arch: arm64
