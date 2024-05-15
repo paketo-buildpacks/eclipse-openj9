@@ -24,4 +24,4 @@ ln -fs main linux/arm64/bin/detect
 
 echo "END"
 ls -lR linux/
-
+ls -lR bin/
