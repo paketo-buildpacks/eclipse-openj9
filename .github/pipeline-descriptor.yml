@@ -6,6 +6,9 @@ codeowners:
 - path:  "*"
   owner: "@paketo-buildpacks/java-maintainers"
 
+helpers:
+  "bin/helper": "github.com/paketo-buildpacks/libjvm/cmd/helper"
+
 package:
   repositories:    ["docker.io/paketobuildpacks/eclipse-openj9", "gcr.io/paketo-buildpacks/eclipse-openj9"]
   register:       true
