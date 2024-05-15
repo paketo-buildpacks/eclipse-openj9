@@ -21,3 +21,7 @@ ln -fs main linux/amd64/bin/build
 ln -fs main linux/arm64/bin/build
 ln -fs main linux/amd64/bin/detect
 ln -fs main linux/arm64/bin/detect
+
+echo "END"
+ls -lR linux/
+
