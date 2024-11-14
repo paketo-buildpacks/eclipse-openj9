@@ -211,16 +211,16 @@ api = "0.7"
       uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:eclipse:openj9:0.46.0:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:eclipse:openj9:0.48.0:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "OpenJ9 JDK"
     purl = "pkg:generic/ibmruntimes/semeru-jdk@21.0.2?arch=amd64"
-    sha256 = "5e6d84107654b3920949b7d5584a4c0342687b54bd0f9bcfd2c8fb2497b4ad6b"
-    source = "https://github.com/ibmruntimes/semeru21-binaries/archive/refs/tags/jdk-21.0.4+7_openj9-0.46.0.tar.gz"
-    source-sha256 = "647f4e2b1eaefeef084fe3cf7a02b81142d04ec1681ad3c51462e34690661e75"
+    sha256 = "ccca1486fd445a7500881e3e43eda58a6b26e4c2efa2926b7a67aeff6d114514"
+    source = "https://github.com/ibmruntimes/semeru21-binaries/archive/refs/tags/jdk-21.0.5+11_openj9-0.48.0.tar.gz"
+    source-sha256 = "38df9d5ebfdb3b49864be081290fb3573f7d71271340cbded793a7f1a3cdad7b"
     stacks = ["*"]
-    uri = "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.4%2B7_openj9-0.46.0/ibm-semeru-open-jdk_x64_linux_21.0.4_7_openj9-0.46.0.tar.gz"
-    version = "21.0.4"
+    uri = "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.5%2B11_openj9-0.48.0/ibm-semeru-open-jdk_x64_linux_21.0.5_11_openj9-0.48.0.tar.gz"
+    version = "21.0.5"
 
     [[metadata.dependencies.licenses]]
       type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
