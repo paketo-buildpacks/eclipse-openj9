@@ -262,7 +262,7 @@ api = "0.7"
     cpes = ["cpe:2.3:a:eclipse:openj9:0.48.0:*:*:*:*:*:*:*"]
     id = "jre"
     name = "OpenJ9 JRE"
-    purl = "pkg:generic/ibmruntimes/semeru-jre@8.0.402?arch=arm64"
+    purl = "pkg:generic/ibmruntimes/semeru-jre@8.0.432?arch=arm64"
     sha256 = "01e57b0ada3dc34b08d2f4644b64244f7a1e9a63cf885f47b9baadf663230b5d"
     source = "https://github.com/ibmruntimes/semeru8-binaries/archive/refs/tags/jdk8u432-b06_openj9-0.48.0.tar.gz"
     source-sha256 = "e50bd49a3222e6593de6c73bfe2e19197bcc6687b1cdac96314e99340ca7617d"
