@@ -400,7 +400,7 @@ api = "0.7"
 
     [[metadata.dependencies.licenses]]
       type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
-      uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"      
+      uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
 [[stacks]]
   id = "*"
