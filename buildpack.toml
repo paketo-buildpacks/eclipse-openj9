@@ -434,38 +434,6 @@ api = "0.7"
       type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
       uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
-  [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:eclipse:openj9:0.55.0:*:*:*:*:*:*:*"]
-    id = "jdk"
-    name = "OpenJ9 JDK"
-    purl = "pkg:generic/ibmruntimes/semeru-jdk@25?arch=arm64"
-    sha256 = "4572e8bbe1310dc518037d60ac2938bd0dada1c15bba1c94e65e0e9777b1ad17"
-    source = "https://github.com/ibmruntimes/semeru25-binaries/archive/refs/tags/jdk-25+36_openj9-0.55.0.tar.gz"
-    source-sha256 = "3ca12b6793e6f6e68eb6ba687818080c93c8f5905f45d6b2e6d92e10f1992b1f"
-    stacks = ["*"]
-    uri = "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25%2B36_openj9-0.55.0/ibm-semeru-open-jdk_aarch64_linux_25_36_openj9-0.55.0.tar.gz"
-    version = "25.0.0"
-
-    [[metadata.dependencies.licenses]]
-      type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
-      uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
-
-  [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:eclipse:openj9:0.55.0:*:*:*:*:*:*:*"]
-    id = "jre"
-    name = "OpenJ9 JRE"
-    purl = "pkg:generic/ibmruntimes/semeru-jre@25?arch=arm64"
-    sha256 = "f917271612b0a29dac208bcbed1544008223ab96e0a000c6c8ca59d58cecd83e"
-    source = "https://github.com/ibmruntimes/semeru25-binaries/archive/refs/tags/jdk-25+36_openj9-0.55.0.tar.gz"
-    source-sha256 = "3ca12b6793e6f6e68eb6ba687818080c93c8f5905f45d6b2e6d92e10f1992b1f"
-    stacks = ["*"]
-    uri = "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25%2B36_openj9-0.55.0/ibm-semeru-open-jre_aarch64_linux_25_36_openj9-0.55.0.tar.gz"
-    version = "25.0.0"
-
-    [[metadata.dependencies.licenses]]
-      type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
-      uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
-
 [[stacks]]
   id = "*"
 
