@@ -243,6 +243,38 @@ api = "0.7"
       uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
   [[metadata.dependencies]]
+    cpes = ["cpe:2.3:a:eclipse:openj9:0.55.0:*:*:*:*:*:*:*"]
+    id = "jdk"
+    name = "OpenJ9 JDK"
+    purl = "pkg:generic/ibmruntimes/semeru-jdk@25?arch=amd64"
+    sha256 = "718b4cb10c95a872d63c22254e4d1879011f7fff05dde1d21af6b63d40a5bb47"
+    source = "https://github.com/ibmruntimes/semeru25-binaries/archive/refs/tags/jdk-25+36_openj9-0.55.0.tar.gz"
+    source-sha256 = "3ca12b6793e6f6e68eb6ba687818080c93c8f5905f45d6b2e6d92e10f1992b1f"
+    stacks = ["*"]
+    uri = "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25%2B36_openj9-0.55.0/ibm-semeru-open-jdk_x64_linux_25_36_openj9-0.55.0.tar.gz"
+    version = "25.0.0"
+
+    [[metadata.dependencies.licenses]]
+      type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
+      uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
+
+  [[metadata.dependencies]]
+    cpes = ["cpe:2.3:a:eclipse:openj9:0.55.0:*:*:*:*:*:*:*"]
+    id = "jre"
+    name = "OpenJ9 JRE"
+    purl = "pkg:generic/ibmruntimes/semeru-jre@25?arch=amd64"
+    sha256 = "3f3a6e3e1f0f29cebb7b8a0e8661b4e59cba99aae3752f5c7c131eca3ab4ca57"
+    source = "https://github.com/ibmruntimes/semeru25-binaries/archive/refs/tags/jdk-25+36_openj9-0.55.0.tar.gz"
+    source-sha256 = "3ca12b6793e6f6e68eb6ba687818080c93c8f5905f45d6b2e6d92e10f1992b1f"
+    stacks = ["*"]
+    uri = "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25%2B36_openj9-0.55.0/ibm-semeru-open-jre_x64_linux_25_36_openj9-0.55.0.tar.gz"
+    version = "25.0.0"
+
+    [[metadata.dependencies.licenses]]
+      type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
+      uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
+
+  [[metadata.dependencies]]
     cpes = ["cpe:2.3:a:eclipse:openj9:0.53.0:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "OpenJ9 JDK"

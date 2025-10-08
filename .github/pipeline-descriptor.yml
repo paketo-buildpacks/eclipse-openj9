@@ -108,6 +108,28 @@ dependencies:
     repository: semeru21-binaries
     tag_filter: jdk(.*21.*)
     token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+- name:            JDK 25
+  id:              jdk
+  version_pattern: "^25(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
+  with:
+    glob: ibm-semeru-open-jdk_x64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru25-binaries
+    tag_filter: jdk(.*25.*)
+    token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
+- name:            JRE 25
+  id:              jre
+  version_pattern: "^25(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
+  uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
+  with:
+    glob: ibm-semeru-open-jre_x64_linux_.+_openj9-.+.tar.gz
+    owner: ibmruntimes
+    repository: semeru25-binaries
+    tag_filter: jdk(.*25.*)
+    token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}    
 # ARM64
 - name:            JDK 8 ARM64
   id:              jdk
