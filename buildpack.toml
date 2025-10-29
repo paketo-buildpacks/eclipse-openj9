@@ -275,16 +275,16 @@ api = "0.7"
       uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:eclipse:openj9:0.53.0:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:eclipse:openj9:0.56.0:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "OpenJ9 JDK"
     purl = "pkg:generic/ibmruntimes/semeru-jdk@8.0.462?arch=arm64"
-    sha256 = "ffdfafe66c22b675393bdc78fff0e4260b677a049cb75c91d228e40a65fbb095"
-    source = "https://github.com/ibmruntimes/semeru8-binaries/archive/refs/tags/jdk8u462-b08_openj9-0.53.0.tar.gz"
-    source-sha256 = "84fe958f85085d24030f187513d609106672a2789487b50f201b487c12bfc85e"
+    sha256 = "4f7b39daad8690ab08a2e73d8b7b3d8768c5771e0d83e1082fc89ae640f3e4b2"
+    source = "https://github.com/ibmruntimes/semeru8-binaries/archive/refs/tags/jdk8u472-b08_openj9-0.56.0.tar.gz"
+    source-sha256 = "24d0e7ae646fbab097f87b7e3e8ca7199657d63f62694bdd3085372e5ecae0a3"
     stacks = ["*"]
-    uri = "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u462-b08_openj9-0.53.0/ibm-semeru-open-jdk_aarch64_linux_8u462b08_openj9-0.53.0.tar.gz"
-    version = "8.0.462"
+    uri = "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u472-b08_openj9-0.56.0/ibm-semeru-open-jdk_aarch64_linux_8u472b08_openj9-0.56.0.tar.gz"
+    version = "8.0.472"
 
     [[metadata.dependencies.licenses]]
       type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
