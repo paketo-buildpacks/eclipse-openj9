@@ -118,7 +118,7 @@ api = "0.7"
     cpes = ["cpe:2.3:a:eclipse:openj9:0.56.0:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "OpenJ9 JDK"
-    purl = "pkg:generic/ibmruntimes/semeru-jdk@8.0.462?arch=amd64"
+    purl = "pkg:generic/ibmruntimes/semeru-jdk@8.0.472?arch=amd64"
     sha256 = "e6c7faea4fc0bcf43b252621f8ec9b1bfcc4986f5fb914266e80f135d3139940"
     source = "https://github.com/ibmruntimes/semeru8-binaries/archive/refs/tags/jdk8u472-b08_openj9-0.56.0.tar.gz"
     source-sha256 = "24d0e7ae646fbab097f87b7e3e8ca7199657d63f62694bdd3085372e5ecae0a3"
