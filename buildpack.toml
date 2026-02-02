@@ -231,12 +231,12 @@ api = "0.7"
     id = "jre"
     name = "OpenJ9 JRE"
     purl = "pkg:generic/ibmruntimes/semeru-jre@21.0.2?arch=amd64"
-    sha256 = "6b3022f3d286b2fde9a964028da637a5ad9a93b1028741dcb72aa3bca49c83d2"
+    sha256 = "1ba123e6eaf56d34885fd2ab3c8d165e791366a20b607cc6c25396f4e1e64405"
     source = "https://github.com/ibmruntimes/semeru21-binaries/archive/refs/tags/jdk-21.0.10+7_openj9-0.57.0.tar.gz"
     source-sha256 = "27a40a5617e066ff58cb7dbb4d9e0e75563b7961207dd5ccdd5b369dbad7c5d3"
     stacks = ["*"]
-    uri = "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.10%2B7_openj9-0.57.0/ibm-semeru-open-jre_x64_linux_21.0.9_10_openj9-0.56.0.tar.gz"
-    version = "21.0.9"
+    uri = "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.10%2B7_openj9-0.57.0/ibm-semeru-open-jre_x64_linux_21.0.10_7_openj9-0.57.0.tar.gz"
+    version = "21.0.10"
 
     [[metadata.dependencies.licenses]]
       type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
