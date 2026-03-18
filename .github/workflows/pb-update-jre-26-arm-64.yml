@@ -11,7 +11,7 @@ jobs:
         steps:
             - uses: actions/setup-go@v5
               with:
-                go-version: "1.24"
+                go-version: "1.26"
             - name: Install update-buildpack-dependency
               run: |
                 #!/usr/bin/env bash
@@ -19,7 +19,7 @@ jobs:
                 set -euo pipefail
 
                 go install -ldflags="-s -w" github.com/paketo-buildpacks/libpak/cmd/update-buildpack-dependency@latest
-            - uses: buildpacks/github-actions/setup-tools@v5.8.9
+            - uses: buildpacks/github-actions/setup-tools@v5.11.0
               with:
                 crane-version: 0.20.3
                 yj-version: 5.1.0
@@ -27,6 +27,7 @@ jobs:
             - id: dependency
               uses: docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
               with:
+                arch: arm64
                 glob: ibm-semeru-open-jre_aarch64_linux_.+.tar.gz
                 owner: ibmruntimes
                 repository: semeru26-binaries
@@ -82,7 +83,7 @@ jobs:
                 CPE: ${{ steps.dependency.outputs.cpe }}
                 CPE_PATTERN: '[\d]+\.[\d]+\.[\d]+'
                 ID: jre
-                PURL: ${{ steps.dependency.outputs.purl }}ƒ
+                PURL: ${{ steps.dependency.outputs.purl }}
                 PURL_PATTERN: ""
                 SHA256: ${{ steps.dependency.outputs.sha256 }}
                 SOURCE_SHA256: ${{ steps.dependency.outputs.source_sha256 }}
@@ -102,5 +103,5 @@ jobs:
                 delete-branch: true
                 labels: ${{ steps.buildpack.outputs.version-label }}, type:dependency-upgrade
                 signoff: true
-                title: Bump JRE 26ƒ ARM64 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}
+                title: Bump JRE 26 ARM64 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}
                 token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
