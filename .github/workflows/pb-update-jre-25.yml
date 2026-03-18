@@ -1,4 +1,4 @@
-name: Update JDK 21 ARM64
+name: Update JRE 25
 "on":
     schedule:
         - cron: 0 5 * * 1-5
@@ -27,11 +27,10 @@ jobs:
             - id: dependency
               uses: docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
               with:
-                arch: arm64
-                glob: ibm-semeru-open-jdk_aarch64_linux_.+_openj9-.+.tar.gz
+                glob: ibm-semeru-open-jre_x64_linux_.+_openj9-.+.tar.gz
                 owner: ibmruntimes
-                repository: semeru21-binaries
-                tag_filter: jdk(.*21.*)
+                repository: semeru25-binaries
+                tag_filter: jdk(.*25.*)
                 token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
             - name: Update Buildpack Dependency
               id: buildpack
@@ -79,10 +78,10 @@ jobs:
                 echo "new-version=${VERSION}" >> "$GITHUB_OUTPUT"
                 echo "version-label=${LABEL}" >> "$GITHUB_OUTPUT"
               env:
-                ARCH: arm64
+                ARCH: ""
                 CPE: ${{ steps.dependency.outputs.cpe }}
                 CPE_PATTERN: '[\d]+\.[\d]+\.[\d]+'
-                ID: jdk
+                ID: jre
                 PURL: ${{ steps.dependency.outputs.purl }}
                 PURL_PATTERN: ""
                 SHA256: ${{ steps.dependency.outputs.sha256 }}
@@ -90,18 +89,18 @@ jobs:
                 SOURCE_URI: ${{ steps.dependency.outputs.source }}
                 URI: ${{ steps.dependency.outputs.uri }}
                 VERSION: ${{ steps.dependency.outputs.version }}
-                VERSION_PATTERN: ^21(?:\.[\d]+(?:\.[\d]+)?)?
+                VERSION_PATTERN: ^25(?:\.[\d]+(?:\.[\d]+)?)?
             - uses: peter-evans/create-pull-request@v6
               with:
                 author: ${{ secrets.JAVA_GITHUB_USERNAME }} <${{ secrets.JAVA_GITHUB_USERNAME }}@users.noreply.github.com>
-                body: Bumps `JDK 21 ARM64` from `${{ steps.buildpack.outputs.old-version }}` to `${{ steps.buildpack.outputs.new-version }}`.
-                branch: update/buildpack/jdk-21-arm-64
+                body: Bumps `JRE 25` from `${{ steps.buildpack.outputs.old-version }}` to `${{ steps.buildpack.outputs.new-version }}`.
+                branch: update/buildpack/jre-25
                 commit-message: |-
-                    Bump JDK 21 ARM64 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}
+                    Bump JRE 25 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}
 
-                    Bumps JDK 21 ARM64 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}.
+                    Bumps JRE 25 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}.
                 delete-branch: true
                 labels: ${{ steps.buildpack.outputs.version-label }}, type:dependency-upgrade
                 signoff: true
-                title: Bump JDK 21 ARM64 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}
+                title: Bump JRE 25 from ${{ steps.buildpack.outputs.old-version }} to ${{ steps.buildpack.outputs.new-version }}
                 token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
