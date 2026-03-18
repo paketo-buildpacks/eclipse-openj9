@@ -136,7 +136,7 @@ dependencies:
   cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
-    glob: ibm-semeru-open-jdk_x64_linux_.+_openj9-.+.tar.gz
+    glob: ibm-semeru-open-jdk_x64_linux_.+.tar.gz
     owner: ibmruntimes
     repository: semeru26-binaries
     tag_filter: jdk(.*26.*)
@@ -147,7 +147,7 @@ dependencies:
   cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
-    glob: ibm-semeru-open-jre_x64_linux_.+_openj9-.+.tar.gz
+    glob: ibm-semeru-open-jre_x64_linux_.+.tar.gz
     owner: ibmruntimes
     repository: semeru26-binaries
     tag_filter: jdk(.*26.*)
