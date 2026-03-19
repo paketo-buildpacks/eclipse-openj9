@@ -39,6 +39,7 @@ jobs:
                 #!/usr/bin/env bash
 
                 set -euo pipefail
+                set -x
 
                 VERSION_DEPS=$(yj -tj < buildpack.toml | jq -r ".metadata.dependencies[] | select( .id == env.ID ) | select( .version | test( env.VERSION_PATTERN ) )")
                 ARCH=${ARCH:-amd64}
