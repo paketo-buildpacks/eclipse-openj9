@@ -279,11 +279,11 @@ api = "0.7"
     id = "jdk"
     name = "OpenJ9 JDK"
     purl = "pkg:generic/ibmruntimes/semeru-jdk@26?arch=amd64"
-    sha256 = "17853b8335187854792540f863ed7d09b7a7b1c939543f37ed71ff27c3fcad34"
-    source = "https://github.com/ibmruntimes/semeru26-binaries/archive/refs/tags/jdk-26.0.2.0.tar.gz"
-    source-sha256 = "78e86034288c6758560e64280429a64345e22fab7fc32e02c75170c558dd4f0b"
+    sha256 = "fbab70472c16f6ffa3de340c18e3c7efbb29d08a6e3402b05edd1f63c08e5f2c"
+    source = "https://github.com/ibmruntimes/semeru26-binaries/archive/refs/tags/jdk-26.0.2.10.tar.gz"
+    source-sha256 = "68aeee0def0e216f6af490aa024ab4aa4502663dbe9826c497eeedc8f9cd8229"
     stacks = ["*"]
-    uri = "https://github.com/ibmruntimes/semeru26-binaries/releases/download/jdk-26.0.2.0/ibm-semeru-open-jdk_x64_linux_26.0.2.0.tar.gz"
+    uri = "https://github.com/ibmruntimes/semeru26-binaries/releases/download/jdk-26.0.2.10/ibm-semeru-open-jdk_x64_linux_26.0.2.10.tar.gz"
     version = "26.0.2"
 
     [[metadata.dependencies.licenses]]
