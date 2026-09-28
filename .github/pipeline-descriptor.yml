@@ -130,27 +130,27 @@ dependencies:
     repository: semeru25-binaries
     tag_filter: jdk(.*25.*)
     token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}    
-- name:            JDK 26
+- name:            JDK 27
   id:              jdk
-  version_pattern: "^26(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  version_pattern: "^27(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
   cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
     glob: ibm-semeru-open-jdk_x64_linux_.+.tar.gz
     owner: ibmruntimes
-    repository: semeru26-binaries
-    tag_filter: jdk(.*26.*)
+    repository: semeru27-binaries
+    tag_filter: jdk(.*27.*)
     token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
-- name:            JRE 26
+- name:            JRE 27
   id:              jre
-  version_pattern: "^26(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  version_pattern: "^27(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
   cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
     glob: ibm-semeru-open-jre_x64_linux_.+.tar.gz
     owner: ibmruntimes
-    repository: semeru26-binaries
-    tag_filter: jdk(.*26.*)
+    repository: semeru27-binaries
+    tag_filter: jdk(.*27.*)
     token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}       
 # ARM64
 - name:            JDK 8 ARM64
@@ -273,27 +273,27 @@ dependencies:
     tag_filter: jdk(.*25.*)
     token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
     arch: arm64   
-- name:            JDK 26 ARM64
+- name:            JDK 27 ARM64
   id:              jdk
-  version_pattern: "^26(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  version_pattern: "^27(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
   cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
     glob: ibm-semeru-open-jdk_aarch64_linux_.+.tar.gz
     owner: ibmruntimes
-    repository: semeru26-binaries
-    tag_filter: jdk(.*26.*)
+    repository: semeru27-binaries
+    tag_filter: jdk(.*27.*)
     token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
     arch: arm64
-- name:            JRE 26 ARM64
+- name:            JRE 27 ARM64
   id:              jre
-  version_pattern: "^26(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
+  version_pattern: "^27(?:\\.[\\d]+(?:\\.[\\d]+)?)?"
   cpe_pattern:     "[\\d]+\\.[\\d]+\\.[\\d]+"
   uses:            docker://ghcr.io/paketo-buildpacks/actions/ibm-semeru-dependency:main
   with:
     glob: ibm-semeru-open-jre_aarch64_linux_.+.tar.gz
     owner: ibmruntimes
-    repository: semeru26-binaries
-    tag_filter: jdk(.*26.*)
+    repository: semeru27-binaries
+    tag_filter: jdk(.*27.*)
     token: ${{ secrets.PAKETO_BOT_GITHUB_TOKEN }}
     arch: arm64      

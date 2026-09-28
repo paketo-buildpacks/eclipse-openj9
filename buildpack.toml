@@ -275,32 +275,32 @@ api = "0.7"
       uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:eclipse:openj9:26.0.2:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:eclipse:openj9:27.0.0:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "OpenJ9 JDK"
-    purl = "pkg:generic/ibmruntimes/semeru-jdk@26?arch=amd64"
-    sha256 = "fbab70472c16f6ffa3de340c18e3c7efbb29d08a6e3402b05edd1f63c08e5f2c"
-    source = "https://github.com/ibmruntimes/semeru26-binaries/archive/refs/tags/jdk-26.0.2.10.tar.gz"
-    source-sha256 = "68aeee0def0e216f6af490aa024ab4aa4502663dbe9826c497eeedc8f9cd8229"
+    purl = "pkg:generic/ibmruntimes/semeru-jdk@27?arch=amd64"
+    sha256 = "83cb93452d979d5810b2f672d3494b5e33ab0333a2b3a2cbb346337d81d7de01"
+    source = "https://github.com/ibmruntimes/semeru27-binaries/archive/refs/tags/jdk-27.0.0.0.tar.gz"
+    source-sha256 = "ba7f4f5345e78493c5c3c893e4b00ba7616f84632f358482c89e11109d11ae00"
     stacks = ["*"]
-    uri = "https://github.com/ibmruntimes/semeru26-binaries/releases/download/jdk-26.0.2.10/ibm-semeru-open-jdk_x64_linux_26.0.2.10.tar.gz"
-    version = "26.0.2"
+    uri = "https://github.com/ibmruntimes/semeru27-binaries/releases/download/jdk-27.0.0.0/ibm-semeru-open-jdk_x64_linux_27.0.0.0.tar.gz"
+    version = "27.0.0"
 
     [[metadata.dependencies.licenses]]
       type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
       uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:eclipse:openj9:26.0.2:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:eclipse:openj9:27.0.0:*:*:*:*:*:*:*"]
     id = "jre"
     name = "OpenJ9 JRE"
-    purl = "pkg:generic/ibmruntimes/semeru-jre@26?arch=amd64"
-    sha256 = "0de86d8ed8d1a764cfa5839bef0283c562f30fd902a01ec406f01143e5bec1aa"
-    source = "https://github.com/ibmruntimes/semeru26-binaries/archive/refs/tags/jdk-26.0.2.10.tar.gz"
-    source-sha256 = "68aeee0def0e216f6af490aa024ab4aa4502663dbe9826c497eeedc8f9cd8229"
+    purl = "pkg:generic/ibmruntimes/semeru-jre@27?arch=amd64"
+    sha256 = "9e6d9c1131da124bd08eb4183f7787a9f90111fc3d62c1231976c2d37372d59e"
+    source = "https://github.com/ibmruntimes/semeru27-binaries/archive/refs/tags/jdk-27.0.0.0.tar.gz"
+    source-sha256 = "ba7f4f5345e78493c5c3c893e4b00ba7616f84632f358482c89e11109d11ae00"
     stacks = ["*"]
-    uri = "https://github.com/ibmruntimes/semeru26-binaries/releases/download/jdk-26.0.2.10/ibm-semeru-open-jre_x64_linux_26.0.2.10.tar.gz"
-    version = "26.0.2"
+    uri = "https://github.com/ibmruntimes/semeru27-binaries/releases/download/jdk-27.0.0.0/ibm-semeru-open-jre_x64_linux_27.0.0.0.tar.gz"
+    version = "27.0.0"
 
     [[metadata.dependencies.licenses]]
       type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
@@ -467,32 +467,32 @@ api = "0.7"
       uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:eclipse:openj9:26.0.2:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:eclipse:openj9:27.0.0:*:*:*:*:*:*:*"]
     id = "jdk"
     name = "OpenJ9 JDK"
-    purl = "pkg:generic/ibmruntimes/semeru-jdk@26?arch=arm64"
-    sha256 = "0202d9a40b0959b19da517a83bf230588af5a2a3ac612785845375b41ae7c632"
-    source = "https://github.com/ibmruntimes/semeru26-binaries/archive/refs/tags/jdk-26.0.2.10.tar.gz"
-    source-sha256 = "68aeee0def0e216f6af490aa024ab4aa4502663dbe9826c497eeedc8f9cd8229"
+    purl = "pkg:generic/ibmruntimes/semeru-jdk@27?arch=arm64"
+    sha256 = "e3ec84ceb4404487874ce21432679f8c51aa832ff42251e521d0de7aca237de4"
+    source = "https://github.com/ibmruntimes/semeru27-binaries/archive/refs/tags/jdk-27.0.0.0.tar.gz"
+    source-sha256 = "ba7f4f5345e78493c5c3c893e4b00ba7616f84632f358482c89e11109d11ae00"
     stacks = ["*"]
-    uri = "https://github.com/ibmruntimes/semeru26-binaries/releases/download/jdk-26.0.2.10/ibm-semeru-open-jdk_aarch64_linux_26.0.2.10.tar.gz"
-    version = "26.0.2"
+    uri = "https://github.com/ibmruntimes/semeru27-binaries/releases/download/jdk-27.0.0.0/ibm-semeru-open-jdk_aarch64_linux_27.0.0.0.tar.gz"
+    version = "27.0.0"
 
     [[metadata.dependencies.licenses]]
       type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
       uri = "https://github.com/eclipse/openj9/blob/master/LICENSE"
 
   [[metadata.dependencies]]
-    cpes = ["cpe:2.3:a:eclipse:openj9:26.0.2:*:*:*:*:*:*:*"]
+    cpes = ["cpe:2.3:a:eclipse:openj9:27.0.0:*:*:*:*:*:*:*"]
     id = "jre"
     name = "OpenJ9 JRE"
-    purl = "pkg:generic/ibmruntimes/semeru-jre@26?arch=arm64"
-    sha256 = "3982238bf202331701e3115c850f2f362cad06fd458d19cb05849d8fdf74deb0"
-    source = "https://github.com/ibmruntimes/semeru26-binaries/archive/refs/tags/jdk-26.0.2.10.tar.gz"
-    source-sha256 = "68aeee0def0e216f6af490aa024ab4aa4502663dbe9826c497eeedc8f9cd8229"
+    purl = "pkg:generic/ibmruntimes/semeru-jre@27?arch=arm64"
+    sha256 = "988cb758c25c0739daf53fd5665f684c1ff0fbf138d1e0f0827208b07aa0ab64"
+    source = "https://github.com/ibmruntimes/semeru27-binaries/archive/refs/tags/jdk-27.0.0.0.tar.gz"
+    source-sha256 = "ba7f4f5345e78493c5c3c893e4b00ba7616f84632f358482c89e11109d11ae00"
     stacks = ["*"]
-    uri = "https://github.com/ibmruntimes/semeru26-binaries/releases/download/jdk-26.0.2.10/ibm-semeru-open-jre_aarch64_linux_26.0.2.10.tar.gz"
-    version = "26.0.2"
+    uri = "https://github.com/ibmruntimes/semeru27-binaries/releases/download/jdk-27.0.0.0/ibm-semeru-open-jre_aarch64_linux_27.0.0.0.tar.gz"
+    version = "27.0.0"
 
     [[metadata.dependencies.licenses]]
       type = "EPL-2.0 OR Apache-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 OR LicenseRef-GPL-2.0 WITH Assembly-exception"
